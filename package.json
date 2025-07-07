@@ -1,0 +1,33 @@
+{
+	"name": "nbu-ticket-management-software-be",
+	"version": "1.0.0",
+	"main": "./src/index.ts",
+	"author": "Onah Victor",
+	"license": "MIT",
+	"scripts": {
+		"dev": "tsx watch ./src",
+		"migrate:up": "node-pg-migrate up",
+		"migrate:down": "node-pg-migrate down",
+		"migrate:create": "node-pg-migrate create"
+	},
+	"dependencies": {
+		"@types/express": "^5.0.3",
+		"@types/jsonwebtoken": "^9.0.10",
+		"@types/node": "^24.0.10",
+		"bcryptjs": "^3.0.2",
+		"dotenv": "^17.0.1",
+		"express": "^5.1.0",
+		"jsonwebtoken": "^9.0.2",
+		"pg": "^8.16.3",
+		"reflect-metadata": "^0.1.14 || ^0.2.0",
+		"zod": "^3.25.71"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.0.6",
+		"@types/cors": "^2.8.19",
+		"@types/pg": "^8.15.4",
+		"node-pg-migrate": "^8.0.3",
+		"tsx": "^4.20.3",
+		"typescript": "^5.8.3"
+	}
+}

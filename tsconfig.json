@@ -1,0 +1,49 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "nodenext",
+    "lib": [
+      "es2020"
+    ],
+    "outDir": "./dist",
+    "rootDir": ".",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "declaration": true,
+    "composite": true,
+    "incremental": true,
+    "paths": {
+      "@utils/*": [
+        "./src/utils/*"
+      ],
+      "@routes/*": [
+        "./src/routes/*"
+      ],
+      "@controllers/*": [
+        "./src/controllers/*"
+      ],
+      "@models/*": [
+        "./src/models/*"
+      ],
+      "@config/*": [
+        "./src/config/*"
+      ],
+      "@middleware/*": [
+        "./src/middleware/*"
+      ]
+    },
+    "baseUrl": "."
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/index.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
