@@ -6,6 +6,7 @@
 	"license": "MIT",
 	"scripts": {
 		"dev": "tsx watch ./src",
+		"start": "tsx ./src/index.ts",
 		"migrate:up": "node-pg-migrate up",
 		"migrate:down": "node-pg-migrate down",
 		"migrate:create": "node-pg-migrate create"
@@ -20,6 +21,7 @@
 		"jsonwebtoken": "^9.0.2",
 		"pg": "^8.16.3",
 		"reflect-metadata": "^0.1.14 || ^0.2.0",
+		"tsx": "^4.20.3",
 		"zod": "^3.25.71"
 	},
 	"devDependencies": {
@@ -27,7 +29,6 @@
 		"@types/cors": "^2.8.19",
 		"@types/pg": "^8.15.4",
 		"node-pg-migrate": "^8.0.3",
-		"tsx": "^4.20.3",
 		"typescript": "^5.8.3"
 	}
 }
