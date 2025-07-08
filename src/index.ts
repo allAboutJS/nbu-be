@@ -13,14 +13,14 @@ const port = Number.parseInt(process.env.PORT ?? "8000");
 server.use(cors());
 server.use(express.json());
 
-// Ping
-server.get("ping", (_, res) => {
-	res.send("pong");
-});
-
 // Routes
 server.use("/api/auth", authRouter);
 server.use("/api/ticket", ticketRouter);
+
+// Ping
+server.get("/ping", (_, res) => {
+	res.send("pong");
+});
 
 server.listen(port, () => {
 	console.log("> Express server is listening on port:", port);
